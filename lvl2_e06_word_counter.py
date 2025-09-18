@@ -13,7 +13,7 @@ def word_counter(text):
     Returns a dict:
         "word_1": count_1[, "word_2: count_2[, ...]]
     """
-    
+
     text_lc = text.lower()
     return_dict = dict()
     # Using regular expression module to manage punctuations
@@ -23,7 +23,7 @@ def word_counter(text):
         if not return_dict.get(pal):
             return_dict[pal] = 0
         return_dict[pal] += 1
-    
+
     return return_dict
 
 texto = "Hola hola, Yo estoy bien, bien bien."
